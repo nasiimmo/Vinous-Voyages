@@ -12,13 +12,6 @@ const __dirname = dirname(__filename)
 // The below line is the router, this should already be present and doesn't need to be added. Add everything below it.
 app.use('/api', router) 
 
-// ** New lines **
-app.use(express.static(path.join(__dirname, 'client', 'dist')))
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'))
-})
-
 const app = express()
 
 app.use(express.json())
@@ -28,6 +21,12 @@ app.use((req, res, next) => {
   next()
 })
 
+// ** New lines **
+app.use(express.static(path.join(__dirname, 'client', 'dist')))
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'))
+})
 
 async function startServer() {
   try {
