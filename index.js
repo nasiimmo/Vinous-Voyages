@@ -9,8 +9,8 @@ import { fileURLToPath } from 'url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
-// The below line is the router, this should already be present and doesn't need to be added. Add everything below it.
-app.use('/api', router) 
+
+
 
 const app = express()
 
@@ -20,6 +20,8 @@ app.use((req, res, next) => {
   console.log(`request received: ${req.method} ${req.url}`)
   next()
 })
+
+app.use('/api', router) 
 
 // ** New lines **
 app.use(express.static(path.join(__dirname, 'client', 'dist')))
