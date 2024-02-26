@@ -36,13 +36,13 @@ export default function Nav() {
       username: '',
       email: '',
       password: '',
-      passwordConfirmation: ''
+      passwordConfirmation: '',
     })
 
   const [loginData, setLoginData] = useState(
     {
       email: '',
-      password: ''
+      password: '',
     })
 
   function handleChange(e) {
