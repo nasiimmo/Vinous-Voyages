@@ -55,11 +55,11 @@ During the initial day, our group engaged in an extensive brainstorming session 
 
 ### Wireframes 
 
-<img src='./images/Trello.png' width="400"/>
+<img src='./client/src/images/Trello.png' width="400"/>
 
-<img src='./images/wireframe-_1.png' width="400"/>
+<img src='./client/src/images/wireframe-_1.png' width="400"/>
 
-<img src='./images/wireframe.png' width="400"/>
+<img src='./client/src/images/wireframe.png' width="400"/>
 
 
 ## Approach Taken
